@@ -1,0 +1,61 @@
+<!-- 사용자 정보를 등록하는 페이지입니다. -->
+
+<!-- 
+1. form과 input 태그를 이용하여 사용자 정보를 받습니다.
+
+참고: https://www.w3schools.com/w3css/w3css_input.asp
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>사용자 정보 입력</title>
+
+	<!-- w3 css 프레임워크를 사용합니다. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<!-- 종이 카드처럼 생긴 w3을 사용합니다. -->
+	<div class="w3-card">
+		<!-- 좌우 16px padding 적용된 w3-container, w3-teal은 배경 색상 --> 
+		<div class="w3-container w3-teal">
+			<h2>User Info</h2>
+		</div>
+		
+		<!-- 사용자 정보를 입력받는 form -->
+		<form class="w3-container">
+			<p>
+				<!-- 이메일 -->
+				<!-- label 태그는  for 속성에 id를 등록하면 그 id를 가진 input과 연결됩니다. -->
+				<label class="w3-text-teal" for="email"><b>email</b></label>
+				<input class="w3-input w3-border w3-sand" name="email" type="text" id="email" placeholder="email">
+			</p>
+
+			<p>
+				<!-- 별명 -->
+				<label class="w3-text-teal" for="name"><b>name</b></label>
+				<input class="w3-input w3-border w3-sand" name="name" type="text" id="name" placeholder="name">
+			</p>
+			
+			<p>
+				<!-- 비밀번호 -->
+				<label class="w3-text-teal" for="pass"><b>password</b></label>
+				<input class="w3-input w3-border w3-sand" name="pass" type="text" id="pass" placeholder="password">
+			</p>
+			
+			<p>
+				<!-- 비밀번호 재확인 -->
+				<label class="w3-text-teal" for="pass_re"><b>repeat password</b></label>
+				<input class="w3-input w3-border w3-sand" name="pass_re" type="text" id="pass_re" placeholder="repeat password">
+			</p>
+			
+			<p>
+				<!-- 등록버튼 -->
+				<button class="w3-btn w3-teal">Register</button>
+			</p>
+		</form>
+	</div>
+</body>
+</html>
